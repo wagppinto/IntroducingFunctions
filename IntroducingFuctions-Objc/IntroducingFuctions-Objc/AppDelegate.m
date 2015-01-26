@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.m
 //  IntroducingFuctions-Objc
 //
@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     // Insert code here...
+    NSString *myName = @"Wagner Pinto";
     
     
     return YES;
