@@ -17,9 +17,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Insert code here...
+    // Declare and set a variable called myName to your name
     NSString *myName = @"Wagner Pinto";
     
+    // Declare two more string variables introduction and japaneseIntroduction both with an NSString type
+    //Set introduction using stringWithFormat class method "My name is %@", myName
+    NSString *introduction = [NSString stringWithFormat:@"My name is %@", myName ];
+    NSString *japaniseIntroduction = [NSString stringWithFormat:@"My name is %@", myName ];
+    
+    // Set japanese introduction using stringByAppendingString instance method by appending " to moushimasu"
+    [japaniseIntroduction stringByAppendingString: @"to moushimasu"];
+    
+    
+    // Print introduction and japanese introduction
+    NSLog(@"My name is %@ and in Japanese is %@", introduction, japaniseIntroduction);
     
     return YES;
 }
