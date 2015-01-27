@@ -22,21 +22,20 @@
     
     // Declare two more string variables introduction and japaneseIntroduction both with an NSString type
     //Set introduction using stringWithFormat class method "My name is %@", myName
-    NSString *introduction = [NSString stringWithFormat:@"My name is %@", myName ];
-    NSString *japaniseIntroduction = [NSString stringWithFormat:@"My name is %@", myName ];
+    NSString * introduction = [NSString stringWithFormat:@"My name is %@", myName ];
+    NSString * japaniseIntroduction = [NSString stringWithFormat:@"My name is %@", myName ];
     
     // Set japanese introduction using stringByAppendingString instance method by appending " to moushimasu"
-    [japaniseIntroduction stringByAppendingString: @"to moushimasu"];
+    NSString * japa = [japaniseIntroduction stringByAppendingString: @" to Moushimasu"];
     
     
     // Print introduction and japanese introduction
-    NSLog(@"My name is %@ and in Japanese is %@", introduction, japaniseIntroduction);
+    NSLog(@"My name is %@ and in Japanese is %@", introduction, japa);
     
     return YES;
 }
 
 // Define new functions here...
-
 
 
 @end
